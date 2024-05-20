@@ -1,3 +1,5 @@
+// ignore_for_file: file_names, unused_local_variable
+
 void main(){//uma função de start por padrão
 
 
@@ -15,5 +17,5 @@ Object qualquerValor = 123.123;
 dynamic qualquerDado = 'ola';
 qualquerDado = 10;
 
-var teste ;
+var teste = 5;
 }
