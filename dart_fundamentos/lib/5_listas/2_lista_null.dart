@@ -1,3 +1,5 @@
+// ignore_for_file: unused_local_variable
+
 void main(){
   var nomes = <String>[];
   var nomesNulos = <String?>[];//npermite tipos nulos
