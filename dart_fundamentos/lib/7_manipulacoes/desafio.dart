@@ -1,8 +1,8 @@
 void verificaIdade(List dadosPacientes){
   int? idade;
   for(var registro in dadosPacientes){
-    idade = int.tryParse(registro[1]);
-    if(idade! > 20){
+    idade = int.tryParse(registro[1]) ?? 0;//adicionar o null aware operator
+    if(idade > 20){
       print("Paciente com mais de vinte: ${registro[0]}");
     }
   }
