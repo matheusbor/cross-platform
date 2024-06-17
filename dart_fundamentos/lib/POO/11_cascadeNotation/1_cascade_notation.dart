@@ -8,6 +8,10 @@ var pessoa = Pessoa()
 //pessoa.email = "@";
 //pessoa.site = ".com";
 
+var mapa = <String, int>{}
+..putIfAbsent("m", () => 2003);//quando coloquei só um ponto transformou a variável mapa em int
+
+print(mapa);
 print(
   '''
   ${pessoa.nome}
