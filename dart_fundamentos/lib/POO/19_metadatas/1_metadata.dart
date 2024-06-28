@@ -23,4 +23,28 @@ classMirror.metadata.forEach((annotation) {
 
 });
 
+  classMirror.declarations.values.forEach((declarationMirror) {
+    if(declarationMirror is VariableMirror){
+      declarationMirror.metadata.forEach((annotation) {
+        var instanceAnnotation = annotation.reflectee;
+
+  if(instanceAnnotation is Fazer){
+    print("variavel");
+    print(instanceAnnotation.quem);
+    print(instanceAnnotation.oque);
+  }
+       });
+    }
+    if(declarationMirror is MethodMirror){
+      declarationMirror.metadata.forEach((annotation) {
+        var instanceAnnotation = annotation.reflectee;
+
+  if(instanceAnnotation is Fazer){
+    print("metodo");
+    print(instanceAnnotation.quem);
+    print(instanceAnnotation.oque);
+  }
+       });
+    }
+   });
 }
