@@ -10,13 +10,13 @@ void main(){
 }
 class Caixa<I extends Itens>{
 
-  List<I> itens =[];
+  List<I>? itens =[];
 
   void adicionar(I item){
-    itens.add(item);
+    itens?.add(item);
   }
   int get altura{
-    return itens[0].altura();
+    return itens?[0].altura()??0;
   }
 }
 abstract class Itens{
